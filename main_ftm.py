@@ -1,17 +1,6 @@
-'''
-
-Fitness Tracker:
-Here we will be calculating 5 points on Fitness of a person:
-    i.) Work Out : it is calculated on the basis of Yoga, Cardio and Meditation
-    ii.) BMI (Body Mass Index) : person's weight in kilograms divided by the square of height in meters.
-    iii.) Water Intake : measure of water intake basically includes drinking water, water in beverages, and water that is part of food.
-    iv.) BMR (Basal Metabolic Rate) : measures the amount of energy (in calories) — that our body needs to stay alive and function properly.
-    v.) Approximately Calorie Burnt : It is calculated on the basis of BMR value and the amount of exercise done per week
-
-'''
 
 
-## i.) function defined to calcuate the work out
+## 1.) function defined to calcuate the work out
 def getTime(type):
     did_ = input('Did you do ' + type + '? (yes/no): ')
     if did_.lower() == 'no':
@@ -46,7 +35,7 @@ def workout():
         print('Your fitness score is 1.0 on scale of 5.0')
 
 
-## ii.) function defined to Calculate BMI(Body Mass Index)
+## 2 ) function defined to Calculate BMI(Body Mass Index)
 def BMI():
     print('\nCalculating BMI(Body Mass Index) :')
     the_height = float(input("Enter the height in cm : "))
@@ -98,6 +87,16 @@ def BMR():
     print('BMR calculated is: ', bMR)
     return bMR
 
+'''
+Fitness Tracker:
+Here we will be calculating 5 points on Fitness of a person:
+    i.) Work Out : it is calculated on the basis of Yoga, Cardio and Meditation
+    ii.) BMI (Body Mass Index) : person's weight in kilograms divided by the square of height in meters.
+    iii.) Water Intake : measure of water intake basically includes drinking water, water in beverages, and water that is part of food.
+    iv.) BMR (Basal Metabolic Rate) : measures the amount of energy (in calories) — that our body needs to stay alive and function properly.
+    v.) Approximately Calorie Burnt : It is calculated on the basis of BMR value and the amount of exercise done per week
+
+'''
 
 ## v.) function defined to calculate the approx amount of calorie burnt
 def approxCalorieBurnt():
